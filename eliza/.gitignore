@@ -1,0 +1,8 @@
+.env
+node_modules
+
+db.sqlite
+/characters
+/dist
+/Dockerfile2
+/elizaConfig.yaml
