@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image"
+import { ConnectWallet } from "./ConnectWallet"
 
 export default function Header(){
     return (
@@ -19,7 +20,7 @@ export default function Header(){
                             <li>Docs</li>
                         </ul>
                     </div>
-                    <button className="border rounded-full p-2 px-5">Connect Wallet</button>
+                    <ConnectWallet />
                 </div>
             </div>
         </div>
