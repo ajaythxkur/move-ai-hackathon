@@ -12,8 +12,8 @@ export default function Header() {
                 <div className="container m-auto border border-dotted border-zinc-800 bg-zinc-900/90 px-5 py-3 rounded-full z-50 relative">
                     <div className="row flex items-center justify-between">
                         <div className="col">
-                            {/* <Image src="/media/logo3.png" alt="logo" height={150} width={150} /> */}
-                            <h1 className="text-2xl">SamurAI</h1>
+                            <Image src="/media/logo3.png" alt="logo" height={150} width={150} />
+                            {/* <h1 className="text-2xl">SamurAI</h1> */}
                         </div>
                         <div className="col flex items-center gap-5">
                             <div className="menu">
