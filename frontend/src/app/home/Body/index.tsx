@@ -1,18 +1,14 @@
 'use client'
 import { useState } from 'react'
-import Aurora from '@/ui/aurora';
 import Image from 'next/image';
 export default function Body() {
     const [activeTab, setActiveTab] = useState(1);
     return (
         <>
             <section className='py-10'>
-                <div className="mt-[-140px] z-10">
-                    <Aurora colorStops={["#3A29FF", "#FF94B4", "#FF3232"]} speed={0.5} amplitude={3} />
-                </div>
-                <div className="container m-auto px-10 py-20 bg-cyan-500/40 rounded-2xl">
+                <div className="container m-auto px-10 lg:py-10 2xl:py-20 bg-cyan-500/40 rounded-2xl">
                     <div className="row flex items-center justify-between">
-                        <div className="col w-1/2">
+                        <div className="col lg:w-[60%] 2xl:w-1/2">
                             <h1 className="text-7xl font-extrabold">SamurAI</h1>
                             <p className="pt-5 w-[70%] text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus doloribus numquam sapiente q.</p>
                             <div className="rounded-2xl p-6 mt-6 bg-black/30">
@@ -29,7 +25,7 @@ export default function Body() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col w-1/2">
+                        <div className="col lg:w-[40%] 2xl:w-1/2">
                         </div>
                     </div>
                 </div>
@@ -72,7 +68,7 @@ export default function Body() {
                         {
                             Array.from({ length: 10 }).map((_, _i) => {
                                 return (
-                                    <>
+                                    
                                         <div key={_i} className="col rounded-2xl bg-cyan-700/10 hover:bg-cyan-700/60 w-[24%] flex items-center p-4 gap-2 transition">
                                             <div className="addr border-r border-zinc-500 w-1/2 text-center">
                                                 <Image src="/media/agent2.webp" alt="agent" height={500} width={500} className='h-[70ox] w-[70px] rounded-full m-auto border-[3px] border-dashed border-cyan-800' />
@@ -84,7 +80,7 @@ export default function Body() {
                                                 <p className='pt-2 text-sm'> 24 Break Attempts</p>
                                             </div>
                                         </div>
-                                    </>
+                                    
                                 )
                             })
                         }
@@ -105,7 +101,7 @@ export default function Body() {
                                 {
                                     Array.from({ length: 10 }).map((_, _i) => {
                                         return (
-                                            <>
+                                            
                                                 <div key={_i} className="col rounded-2xl bg-cyan-600/10 hover:bg-cyan-700/60 w-[100%] flex items-center p-3 gap-2 transition">
                                                     <Image src="/media/agent2.webp" alt="agent" height={500} width={500} className='h-[40ox] w-[40px] rounded-full m-auto border-[3px] border-dashed border-cyan-800' />
                                                     <div className="w-1/2 text-center">
@@ -122,7 +118,7 @@ export default function Body() {
                                                         <h3 className='font-semibold text-base'>Live</h3>
                                                     </div>
                                                 </div>
-                                            </>
+                                            
                                         )
                                     })
                                 }
@@ -134,24 +130,24 @@ export default function Body() {
                                 {
                                     Array.from({ length: 10 }).map((_, _i) => {
                                         return (
-                                            <>
-                                                <div key={_i} className="col rounded-2xl bg-cyan-600/10 hover:bg-cyan-700/60 w-[100%] flex items-center p-3 gap-2 transition">
-                                                    <Image src="/media/agent1.png" alt="agent" height={500} width={500} className='h-[40ox] w-[40px] rounded-full m-auto border-[3px] border-dashed border-cyan-800' />
-                                                    <div className="w-1/2 text-center">
-                                                        <h3 className='text-lg'>Agent Name</h3>
-                                                        <p className='pt-2 text-xs'>34 Attempts</p>
-                                                    </div>
-                                                    <div className="px-4 text-white/90 w-1/2 text-end">
-                                                        <h3 className='font-semibold text-base'>$23,463</h3>
-                                                    </div>
-                                                    <div className="px-4 text-white/90 w-1/2 text-end">
-                                                        <h3 className='font-semibold text-base'>10.00 Move</h3>
-                                                    </div>
-                                                    <div className="px-4 text-white/90 w-1/2 text-end">
-                                                        <h3 className='font-semibold text-base'>Live</h3>
-                                                    </div>
+
+                                            <div key={_i} className="col rounded-2xl bg-cyan-600/10 hover:bg-cyan-700/60 w-[100%] flex items-center p-3 gap-2 transition">
+                                                <Image src="/media/agent1.png" alt="agent" height={500} width={500} className='h-[40ox] w-[40px] rounded-full m-auto border-[3px] border-dashed border-cyan-800' />
+                                                <div className="w-1/2 text-center">
+                                                    <h3 className='text-lg'>Agent Name</h3>
+                                                    <p className='pt-2 text-xs'>34 Attempts</p>
                                                 </div>
-                                            </>
+                                                <div className="px-4 text-white/90 w-1/2 text-end">
+                                                    <h3 className='font-semibold text-base'>$23,463</h3>
+                                                </div>
+                                                <div className="px-4 text-white/90 w-1/2 text-end">
+                                                    <h3 className='font-semibold text-base'>10.00 Move</h3>
+                                                </div>
+                                                <div className="px-4 text-white/90 w-1/2 text-end">
+                                                    <h3 className='font-semibold text-base'>Live</h3>
+                                                </div>
+                                            </div>
+
                                         )
                                     })
                                 }
